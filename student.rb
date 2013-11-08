@@ -16,7 +16,7 @@ class Student
 	end
 
 	def to_s
-		" * #{last_name}, #{first_name}"
+		" *#{last_name}, #{first_name}"
 	end
 end
 
@@ -34,13 +34,10 @@ jack = Student.new("Jack", "Gong", 11)
 all_students = [fred, sarah, jack]
 
 puts "Seniors"
-
 seniors(all_students).each do |student|
 		puts student
 end
-
-puts "Juniors"
-
+	puts "Juniors"
 juniors(all_students).each do |student|
-		puts student
+	puts student
 end
